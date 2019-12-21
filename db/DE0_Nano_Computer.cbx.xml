@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DE0_Nano_Computer">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_Nano_Computer|nios_system:NiosII|nios_system_CPU:cpu|lpm_add_sub:Add17" CBX_FILE_NAME="add_sub_qvi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_Nano_Computer|nios_system:NiosII|nios_system_CPU:cpu|nios_system_CPU_mult_cell:the_nios_system_CPU_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_q1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_jp01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_Nano_Computer|nios_system:NiosII|nios_system_CPU:cpu|nios_system_CPU_mult_cell:the_nios_system_CPU_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_s1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_j011.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,529 @@
+Flow report for DE0_Nano_Computer
+Mon Nov 04 14:41:39 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Successful - Mon Nov 04 14:41:39 2019            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; DE0_Nano_Computer                                ;
+; Top-level Entity Name              ; DE0_Nano_Computer                                ;
+; Family                             ; Cyclone IV E                                     ;
+; Device                             ; EP4CE22F17C6                                     ;
+; Timing Models                      ; Final                                            ;
+; Total logic elements               ; 4,894 / 22,320 ( 22 % )                          ;
+;     Total combinational functions  ; 4,337 / 22,320 ( 19 % )                          ;
+;     Dedicated logic registers      ; 3,213 / 22,320 ( 14 % )                          ;
+; Total registers                    ; 3285                                             ;
+; Total pins                         ; 94 / 154 ( 61 % )                                ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 29,248 / 608,256 ( 5 % )                         ;
+; Embedded Multiplier 9-bit elements ; 4 / 132 ( 3 % )                                  ;
+; Total PLLs                         ; 2 / 4 ( 50 % )                                   ;
++------------------------------------+--------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/18/2019 14:10:18 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DE0_Nano_Computer   ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                     ;
++--------------------------------------+----------------------------------------------------------------------+---------------+---------------------------------+----------------------+
+; Assignment Name                      ; Value                                                                ; Default Value ; Entity Name                     ; Section Id           ;
++--------------------------------------+----------------------------------------------------------------------+---------------+---------------------------------+----------------------+
+; COMPILER_SIGNATURE_ID                ; 202883596979497.157140061803152                                      ; --            ; --                              ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL      ; Design Compiler                                                      ; <None>        ; --                              ; --                   ;
+; EDA_INPUT_DATA_FORMAT                ; Vhdl                                                                 ; --            ; --                              ; eda_design_synthesis ;
+; EDA_INPUT_VCC_NAME                   ; Vdd                                                                  ; --            ; --                              ; eda_design_synthesis ;
+; EDA_LMF_FILE                         ; altsyn.lmf                                                           ; --            ; --                              ; eda_design_synthesis ;
+; ENABLE_SIGNALTAP                     ; Off                                                                  ; --            ; --                              ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_avalon_sc_fifo           ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_merlin_burst_adapter     ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_merlin_master_agent      ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_merlin_master_translator ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_merlin_slave_agent       ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_merlin_slave_translator  ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_merlin_traffic_limiter   ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_merlin_width_adapter     ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; altera_reset_controller         ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system                     ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_CPU                 ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_Interval_timer      ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_JTAG_UART           ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_SDRAM               ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_addr_router         ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_addr_router_001     ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_cmd_xbar_demux      ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_cmd_xbar_demux_001  ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_cmd_xbar_mux        ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_id_router           ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_id_router_001       ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_id_router_002       ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_irq_mapper          ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_rsp_xbar_demux      ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_rsp_xbar_demux_002  ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_rsp_xbar_mux        ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_rsp_xbar_mux_001    ; --                   ;
+; IP_TOOL_ENV                          ; Qsys                                                                 ; --            ; nios_system_sysid               ; --                   ;
+; IP_TOOL_NAME                         ; altera_avalon_sc_fifo                                                ; --            ; altera_avalon_sc_fifo           ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_burst_adapter                                          ; --            ; altera_merlin_burst_adapter     ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_master_agent                                           ; --            ; altera_merlin_master_agent      ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_master_translator                                      ; --            ; altera_merlin_master_translator ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_slave_agent                                            ; --            ; altera_merlin_slave_agent       ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_slave_translator                                       ; --            ; altera_merlin_slave_translator  ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_traffic_limiter                                        ; --            ; altera_merlin_traffic_limiter   ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_width_adapter                                          ; --            ; altera_merlin_width_adapter     ; --                   ;
+; IP_TOOL_NAME                         ; altera_reset_controller                                              ; --            ; altera_reset_controller         ; --                   ;
+; IP_TOOL_NAME                         ; Qsys                                                                 ; --            ; nios_system                     ; --                   ;
+; IP_TOOL_NAME                         ; altera_nios2_qsys                                                    ; --            ; nios_system_CPU                 ; --                   ;
+; IP_TOOL_NAME                         ; altera_avalon_timer                                                  ; --            ; nios_system_Interval_timer      ; --                   ;
+; IP_TOOL_NAME                         ; altera_avalon_jtag_uart                                              ; --            ; nios_system_JTAG_UART           ; --                   ;
+; IP_TOOL_NAME                         ; altera_avalon_new_sdram_controller                                   ; --            ; nios_system_SDRAM               ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                                 ; --            ; nios_system_addr_router         ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                                 ; --            ; nios_system_addr_router_001     ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_demultiplexer                                          ; --            ; nios_system_cmd_xbar_demux      ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_demultiplexer                                          ; --            ; nios_system_cmd_xbar_demux_001  ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_multiplexer                                            ; --            ; nios_system_cmd_xbar_mux        ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                                 ; --            ; nios_system_id_router           ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                                 ; --            ; nios_system_id_router_001       ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                                 ; --            ; nios_system_id_router_002       ; --                   ;
+; IP_TOOL_NAME                         ; altera_irq_mapper                                                    ; --            ; nios_system_irq_mapper          ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_demultiplexer                                          ; --            ; nios_system_rsp_xbar_demux      ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_demultiplexer                                          ; --            ; nios_system_rsp_xbar_demux_002  ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_multiplexer                                            ; --            ; nios_system_rsp_xbar_mux        ; --                   ;
+; IP_TOOL_NAME                         ; altera_merlin_multiplexer                                            ; --            ; nios_system_rsp_xbar_mux_001    ; --                   ;
+; IP_TOOL_NAME                         ; altera_avalon_sysid_qsys                                             ; --            ; nios_system_sysid               ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_avalon_sc_fifo           ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_merlin_burst_adapter     ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_merlin_master_agent      ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_merlin_master_translator ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_merlin_slave_agent       ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_merlin_slave_translator  ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_merlin_traffic_limiter   ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_merlin_width_adapter     ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; altera_reset_controller         ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0sp1                                                              ; --            ; nios_system                     ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_CPU                 ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0.1.99.2                                                          ; --            ; nios_system_Interval_timer      ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0.1.99.2                                                          ; --            ; nios_system_JTAG_UART           ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0.1.99.2                                                          ; --            ; nios_system_SDRAM               ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_addr_router         ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_addr_router_001     ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_cmd_xbar_demux      ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_cmd_xbar_demux_001  ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_cmd_xbar_mux        ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_id_router           ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_id_router_001       ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_id_router_002       ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_irq_mapper          ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_rsp_xbar_demux      ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_rsp_xbar_demux_002  ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_rsp_xbar_mux        ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_rsp_xbar_mux_001    ; --                   ;
+; IP_TOOL_VERSION                      ; 13.0                                                                 ; --            ; nios_system_sysid               ; --                   ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                   ; --            ; --                              ; --                   ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                    ; --            ; --                              ; --                   ;
+; MISC_FILE                            ; nios_system/synthesis/../../nios_system.cmp                          ; --            ; --                              ; --                   ;
+; MISC_FILE                            ; nios_system/synthesis/../../nios_system.qsys                         ; --            ; --                              ; --                   ;
+; NUM_PARALLEL_PROCESSORS              ; All                                                                  ; --            ; --                              ; --                   ;
+; PARTITION_COLOR                      ; 16764057                                                             ; --            ; --                              ; Top                  ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                                ; --            ; --                              ; Top                  ;
+; PARTITION_NETLIST_TYPE               ; POST_FIT                                                             ; --            ; --                              ; Top                  ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC       ; On                                                                   ; Off           ; --                              ; --                   ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING ; On                                                                   ; Off           ; --                              ; --                   ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                  ; --            ; --                              ; --                   ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                ; --            ; --                              ; --                   ;
+; SLD_FILE                             ; F:/Drive_H/altera/design/Robotique/NIOS_ROBOT/stp1_auto_stripped.stp ; --            ; --                              ; --                   ;
+; SLD_INFO                             ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1571400444        ; --            ; nios_system                     ; --                   ;
+; SOPCINFO_FILE                        ; nios_system/synthesis/../../nios_system.sopcinfo                     ; --            ; --                              ; --                   ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                   ; --            ; --                              ; --                   ;
+; USE_SIGNALTAP_FILE                   ; stp1.stp                                                             ; --            ; --                              ; --                   ;
++--------------------------------------+----------------------------------------------------------------------+---------------+---------------------------------+----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:38     ; 1.6                     ; 4817 MB             ; 00:00:22                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4678 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:26     ; 1.3                     ; 5602 MB             ; 00:00:23                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4610 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4746 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 4851 MB             ; 00:00:07                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4685 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:20     ; 1.4                     ; 5579 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4617 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 4742 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4790 MB             ; 00:00:06                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4686 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 5573 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4613 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4747 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 4798 MB             ; 00:00:06                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4686 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 5579 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4617 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4751 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4677 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:38     ; 1.6                     ; 4830 MB             ; 00:00:24                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4674 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:24     ; 1.6                     ; 5616 MB             ; 00:00:22                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4621 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4755 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 4870 MB             ; 00:00:08                           ;
+; Partition Merge           ; 00:00:09     ; 1.0                     ; 4689 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 5571 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4621 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 4747 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 4810 MB             ; 00:00:07                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4685 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:22     ; 1.0                     ; 5573 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:15     ; 1.0                     ; 4617 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 4758 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4810 MB             ; 00:00:06                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4685 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:20     ; 1.4                     ; 5569 MB             ; 00:00:15                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4617 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4746 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4677 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4673 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4677 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4673 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:35     ; 1.7                     ; 4830 MB             ; 00:00:21                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:30     ; 1.6                     ; 5624 MB             ; 00:00:23                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4621 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4753 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:36     ; 1.7                     ; 4840 MB             ; 00:00:21                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:26     ; 1.9                     ; 5624 MB             ; 00:00:22                           ;
+; Assembler                 ; 00:00:14     ; 1.0                     ; 4621 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4752 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 4811 MB             ; 00:00:06                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4684 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:20     ; 1.4                     ; 5575 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4617 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:15     ; 1.0                     ; 4745 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 4810 MB             ; 00:00:06                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4685 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:20     ; 1.4                     ; 5576 MB             ; 00:00:15                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4617 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4745 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:45     ; 1.6                     ; 4836 MB             ; 00:00:25                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4668 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:28     ; 1.4                     ; 5627 MB             ; 00:00:27                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4621 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4752 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 4811 MB             ; 00:00:07                           ;
+; Partition Merge           ; 00:00:09     ; 1.0                     ; 4687 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:24     ; 1.6                     ; 5567 MB             ; 00:00:19                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4617 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 4746 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:39     ; 1.7                     ; 4813 MB             ; 00:00:24                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:26     ; 1.3                     ; 5623 MB             ; 00:00:24                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4621 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 2.7                     ; 4765 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:46     ; 1.7                     ; 4839 MB             ; 00:00:27                           ;
+; Partition Merge           ; 00:00:08     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:28     ; 1.5                     ; 5627 MB             ; 00:00:26                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4621 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 4765 MB             ; 00:00:05                           ;
+; Total                     ; 00:25:14     ; --                      ; --                  ; 00:11:13                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137223         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; a-137206         ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_map --read_settings_files=on --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_cdb --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_sta DE0_Nano_Computer -c DE0_Nano_Computer
+quartus_eda --read_settings_files=off --write_settings_files=off DE0_Nano_Computer -c DE0_Nano_Computer
+
+
+

@@ -1,0 +1,188 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\zwu\robot\NIOS_ROBOT_Polytech\NIOS_ROBOT_Polytech_REF\ip_modules
+Ecapteurs_sol
+Z1 w1481542460
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\zwu\robot\NIOS_ROBOT_Polytech\NIOS_ROBOT_Polytech_REF\ip_modules
+Z6 8C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/capteurs_sol.vhd
+Z7 FC:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/capteurs_sol.vhd
+l0
+L12
+Vd_35R@]2Z^@^CMAo]]g^13
+!s100 C2g^n]iXafL3>GQ=Mk8X52
+Z8 OV;C;10.1d;51
+32
+!i10b 1
+Z9 !s108 1572883604.482000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/capteurs_sol.vhd|
+Z11 !s107 C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/capteurs_sol.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Artl
+R2
+R3
+R4
+Z14 DEx4 work 12 capteurs_sol 0 22 d_35R@]2Z^@^CMAo]]g^13
+l102
+L36
+Z15 VOgdVIPKJnUEJ9T]:gJ`7:1
+Z16 !s100 =LR4cz^W<^ok];_U46>;K0
+R8
+32
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Ecapteurs_sol_seuil
+Z17 w1482920700
+R2
+R3
+R4
+R5
+Z18 8C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/capteurs_sol_seuil.vhd
+Z19 FC:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/capteurs_sol_seuil.vhd
+l0
+L12
+VUWz?B=<]H9MOeK_XeB1JT3
+R8
+32
+Z20 !s108 1572883598.394000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/capteurs_sol_seuil.vhd|
+Z22 !s107 C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/capteurs_sol_seuil.vhd|
+R12
+R13
+!s100 ^mjjQ?=cHSUCezi4Gf]Ak1
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 18 capteurs_sol_seuil 0 22 UWz?B=<]H9MOeK_XeB1JT3
+l110
+L40
+VZiA4gk7Lk_@j5Yb?foLSR0
+R8
+32
+R20
+R21
+R22
+R12
+R13
+!s100 F]o0>_41NiW:1AL^N4h[B2
+!i10b 1
+Eirda_receiver_id
+Z23 w1482921574
+R2
+R3
+R4
+R5
+Z24 8C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/irda_receiver_id.vhd
+Z25 FC:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/irda_receiver_id.vhd
+l0
+L20
+V@bi9dSW_491l4<;E92db50
+R8
+32
+Z26 !s108 1572883598.474000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/irda_receiver_id.vhd|
+Z28 !s107 C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/irda_receiver_id.vhd|
+R12
+R13
+!s100 j3H8;?0A]SUDWV<3RHm>M3
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 16 irda_receiver_id 0 22 @bi9dSW_491l4<;E92db50
+l69
+L37
+Vf2JRZEYX1aBiecRz6biSl3
+R8
+32
+R26
+R27
+R28
+R12
+R13
+!s100 ?Pl60QhnU6`@d575MdCfZ3
+!i10b 1
+Epll_2freqs
+Z29 w1482319408
+R3
+R4
+R5
+Z30 8C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/pll_2freqs.vhd
+Z31 FC:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/pll_2freqs.vhd
+l0
+L42
+VN`C3:]z>UN<YbO=YjlL4Z0
+R8
+32
+Z32 !s108 1572883598.564000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/pll_2freqs.vhd|
+Z34 !s107 C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/pll_2freqs.vhd|
+R12
+R13
+!s100 bNzlm]_GAEnQPz>@Anlkm1
+!i10b 1
+Asyn
+R3
+R4
+DEx4 work 10 pll_2freqs 0 22 N`C3:]z>UN<YbO=YjlL4Z0
+l132
+L53
+VO:7DFi`6H4?J;E;@1`V@Y0
+R8
+32
+R32
+R33
+R34
+R12
+R13
+!s100 1jjVml]nG1GZZJeN;lj^e1
+!i10b 1
+Epwm_generation
+Z35 w1482387616
+R2
+R3
+R4
+R5
+Z36 8C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/PWM_generation.vhd
+Z37 FC:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/PWM_generation.vhd
+l0
+L11
+VD@935^djc^JdZD;8oQQaD1
+R8
+32
+Z38 !s108 1572883598.654000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/PWM_generation.vhd|
+Z40 !s107 C:/Users/zwu/robot/NIOS_ROBOT_Polytech/NIOS_ROBOT_Polytech_REF/ip_modules/PWM_generation.vhd|
+R12
+R13
+!s100 1Y[QIJUNUfFajY4JoB<=N1
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 14 pwm_generation 0 22 D@935^djc^JdZD;8oQQaD1
+l28
+L19
+V0z?Z4Y7AWNhdJU]KNGk362
+R8
+32
+R38
+R39
+R40
+R12
+R13
+!s100 ;nID1hnHfLh^Ie>HzQLbh1
+!i10b 1
